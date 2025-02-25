@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppines', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #2e3192, #1BFFFF);
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Search Bar Section */
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background: #ffffff30;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Input Field and Dropdown */
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Input Field */
+
+#searchBox {
+    width: 50%;
+    max-width: 300px;
+    background: #fff;
+    color: #333;
+}
+
+/* Select Dropdown */
+
+#searchType {
+    background: #ffc107;
+    color: black;
+    font-weight: bold;
+}
+
+/* Product Container */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Product Card */
+
+.product {
+    background: #fff;
+    color: #333;
+    padding: 20x;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0green, 0, 0.3);
+    transition: 0.3s ease-in-out; width: 250px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    background: #ffc107;
+}
+
+/* Button Styles */
+
+button {
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Checkout Button */
+
+.checkout-btn {
+    background-color: #4caf50;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Cart Section */
+
+#cartList {
+    list-style: none;
+    padding: 0;
+}
+
+#cartList li {
+    background-color: #fff;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #searchBox {
+        width: 80%;
+    }
+}
