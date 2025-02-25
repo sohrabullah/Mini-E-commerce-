@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🛒 JavaScript Mini E-Commerce Store</h1>
+
+    <!-- Improved Search Section -->
+    <form id="searchForm" class="search-section" onsubmit="handleSearch(event)">
+        <label for="searchBox">🔍 Search Products:</label>
+        <input type="text" id="searchBox" name="searchBox" placeholder="Search products..." required>
+        
+        <label for="searchType">Search Type:</label>
+        <select id="searchType" name="searchType">
+            <option value="local">Search on Website</option>
+            <option value="google">Search on Google</option>
+        </select>
+        
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Product List -->
+    <div id="productList" class="product-container"></div>
+
+    <!-- Cart Section -->
+    <h2>🛍 Your Cart</h2>
+    <ul id="cartList"></ul>
+    <p>Total: $<span id="totalPrice">0</span></p>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
